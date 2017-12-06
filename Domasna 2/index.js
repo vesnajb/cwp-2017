@@ -1,9 +1,11 @@
-var niza = [2, 5, 3, 2, 3, 3, 5, 1, 1, 4, 4, 2, 4, 2, 2, 4];
-var b=0;
-function sekojTretParenBroj(n){
+var niza1 = [2, 5, 3, 2, 3, 3, 5, 1, 1, 4, 4, 2, 4, 2, 2, 4];
+var niza2 = [5, 7, 13, 4, 8, 14, 13, 25, 11, 16, 42, 9, 12, 44, 26, 22, 34];
+var niza3 = [3, 8, 6, 92, 34, 51, 36, 13, 17, 14, 11, 24, 57, 58,102, 108];
+
+function sekojTretParenBroj(niza){
+	var b=0;
 	for(var i=0; i< niza.length; i++){
-		n=niza[i];
-		if (n%2==0) {
+		if (niza[i]%2==0) {
 				b=b+1;
 				if (b==3){ 
 					console.log(niza[i]);
@@ -12,51 +14,45 @@ function sekojTretParenBroj(n){
 		}
 	}
 }
-sekojTretParenBroj(niza);
+sekojTretParenBroj(niza1);
+sekojTretParenBroj(niza2);
+sekojTretParenBroj(niza3);
 
 
-var niza2 = [5, 7, 13, 4, 8, 14, 13, 25, 11, 16, 42, 9, 12, 44, 26, 22, 34];
-function sekojTretParenBroj2(n){
-	for(var i=0; i< niza2.length; i++){
-		n=niza2[i];
-		if (n%2==0) {
-				b=b+1;
-				if (b==3){ 
-					console.log(niza2[i]);
-					b=0;
-				};
-		}
-	}
-}
-sekojTretParenBroj2(niza2);
-
-
-
-var niza = [2, 5, 3, 2, 3, 3, 5, 1, 1, 4, 4, 2, 4, 2, 2, 4];
 var sum=0;
-function zbirNaNeparniBroevi(m){
+
+function zbirNaNeparniBroevi(niza){
+	sum=0;
 	for(var i=0; i< niza.length; i++){
-		m=niza[i];
-		if (m%2==1) {
+		if (niza[i]%2==1) {
 			sum=sum+niza[i];
 		};
 };
 return "sum";
-}
-zbirNaNeparniBroevi(niza);
+};
+
+zbirNaNeparniBroevi(niza1);
+console.log(sum);
+zbirNaNeparniBroevi(niza2);
+console.log(sum);
+zbirNaNeparniBroevi(niza3);
 console.log(sum);
 
 
 var p=0;
-function prosek(l){
+function prosek(niza){
+	p=0;
 	for(var i=0; i<niza.length; i++){
-		l=niza[i];
-		p=p+l;
+		p=p+niza[i];
 	};
-	p=p/16;
+	p=p/niza.length;
 	return 'p';
 }
-prosek(niza);
+prosek(niza1);
+console.log(p);
+prosek(niza2);
+console.log(p);
+prosek(niza3);
 console.log(p);
 
 

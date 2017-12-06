@@ -168,10 +168,10 @@ switch(mesec){
 }
 ime= 'Eva';
 
-function zdravo(ime, prezime){
+function zdravo(prezime){
 	console.log('Zdravo ' + ime + ' ' + prezime);
 }
-zdravo('Vesna', 'Vesnovska');
+zdravo('Vesnovska');
 zdravo('Ivana', 'Ivanovska');
 // zdravo();
 // zdravo();
