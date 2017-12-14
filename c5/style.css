@@ -1,0 +1,9 @@
+.win{
+	background-color:red;
+	font-family: sans-serif;
+	color:white;
+	font-size: 50px;
+	display:none;
+	text-align: center;
+	padding:30px;
+}
