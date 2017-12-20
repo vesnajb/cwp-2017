@@ -63,7 +63,14 @@ sliki.forEach(function(i){
 
 li.addEventListener('click', function(){
 	this.classList.add('transform');
+	li.addEventListener('click', function(){
+	this.classList.remove('transform');
 });
+});
+
+// icon.addEventListener('click', function(){
+// 	this.classList.remove('transform');
+// });
 
 	
 });

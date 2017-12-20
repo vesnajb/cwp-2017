@@ -32,7 +32,7 @@ li h3{
 }
 
 li i{
-	visibility:hidden;
+	/*visibility:hidden;*/
 	margin:0;
 	position: absolute;
 	z-index: 1;
@@ -40,12 +40,13 @@ li i{
 
 }
 li:hover + li i, i:hover{
-	visibility: visible;
+	/*visibility: visible;*/
 	/*display:block;*/
 	background-color: grey;
 
 }
 ul .transform{
 	transform: scale(2.5, 2.5);
-	
+	background-color: lightgrey;
+	position:relative;
 }
