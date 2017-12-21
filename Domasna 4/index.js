@@ -46,6 +46,10 @@ sliki.forEach(function(i){
 	var icon = document.createElement("i");
 	icon.setAttribute("class","fa fa-times-circle-o");
 
+	var button = document.createElement("button");
+	
+	button.appendChild(icon);
+
 	var img = document.createElement('img');
 	img.setAttribute("src", i.image );
 	
@@ -53,7 +57,7 @@ sliki.forEach(function(i){
 	h3.innerText = i.title;
 	
 	var li = document.createElement('li');
-	li.appendChild(icon);
+	li.appendChild(button);
 	li.appendChild(img);
 	li.appendChild(h3);
 
@@ -61,10 +65,16 @@ sliki.forEach(function(i){
 
 	body.appendChild(ul);
 
-li.addEventListener('click', function(){
-	this.classList.add('transform');
 	li.addEventListener('click', function(){
-	this.classList.remove('transform');
+		this.classList.add('transform');
+		li.addEventListener('click', function(){
+		this.classList.remove('transform');
+
+	icon.addEventListener('click', function(){
+		this.parentNode.remove();
+	})	
+
+
 });
 });
 

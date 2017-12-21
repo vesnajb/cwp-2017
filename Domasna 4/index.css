@@ -31,15 +31,16 @@ li h3{
 	/*color:red;*/
 }
 
-li i{
+li button{
 	/*visibility:hidden;*/
 	margin:0;
 	position: absolute;
 	z-index: 1;
-	margin-left:280px;
+	right:-10px;
+	border-radius: 50%;
 
 }
-li:hover + li i, i:hover{
+li:hover button{
 	/*visibility: visible;*/
 	/*display:block;*/
 	background-color: grey;
