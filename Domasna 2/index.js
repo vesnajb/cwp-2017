@@ -33,12 +33,8 @@ function zbirNaNeparniBroevi(niza){
 }
 
 console.log(zbirNaNeparniBroevi(niza1));
-
 console.log(zbirNaNeparniBroevi(niza2));
-
 console.log(zbirNaNeparniBroevi(niza3));
-
-
 
 
 function prosek(niza){
@@ -52,7 +48,5 @@ function prosek(niza){
 }
 
 console.log(prosek(niza1));
-
 console.log(prosek(niza2));
-
 console.log(prosek(niza3));

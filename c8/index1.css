@@ -1,0 +1,22 @@
+body{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+.slider{
+	width:600px;
+	height:400px;
+	overflow: hidden;
+}
+
+.slider .slides{
+	width:600px;
+	height:400px;
+	transition: all .3s ease-in-out;
+}
+
+.slider .slides img{
+	width:600px;
+	height:400px;
+}

@@ -1,50 +1,41 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	
+	box-sizing: border-box;
 }
 .slider{
 	width:600px;
 	height: 400px;
-	display:block;
 	overflow: hidden;
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+	
 }
-.slides{
-	width:600px;
-	height:400px;
-	padding: 0;
-	margin: 0;
+.slider .slides{
+	height:calc(400px *4);
 	transition: all 0.3 ease-in-out;
+	
 }
-.slider .slides .img {
+.slider .slides img{
 	width:600px;
 	height:400px;
-	padding: 0;
-	margin: 0;
+	
 }
 .slider2{
 	width:600px;
 	height: 400px;
+	display:block;
 	box-sizing: border-box;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
+	
 }
 .slides2{
-	width:600px;
+	width:2400px;
 	height:400px;
-	padding: 0;
-	margin: 0;
 	transition: all 0.3 ease-in-out;
-	display:block;
 }
-.slider2 .slides2 .img {
+.slider2 .slides2 img{
 	width:600px;
 	height:400px;
-	padding: 0;
-	margin: 0;
 	float:left;
 }
